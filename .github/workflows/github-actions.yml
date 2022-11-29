@@ -1,0 +1,12 @@
+name: Github Actions Demo
+on: [pull_request]
+jobs: 
+  Explore-Github-Actions:
+    runs-on: ubuntu-latest
+    steps: 
+    - run: echo "🎉 First job triggered by ${{ github.event_name }} event"
+    - run: echo "🎉 This job is now running on a ${{ runner.os }} server hosted by GitHub"
+    - run: echo "🎉 The name of your branch is ${{ github.ref }} and your repository ${{ github.repository }}"
+    # name: 
+
+
