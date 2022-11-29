@@ -1,8 +1,12 @@
+import LinkButton from "../../components/buttons/LinkButton"
+import PageLayout from "../../components/layout/PageLayout"
+
 const Over = () => {
   return (
-    <div>
+    <PageLayout>
       <h1>Game Over</h1>
-    </div>
+      <LinkButton pathname="Restart" path="/game/select" />
+    </PageLayout>
   )
 }
 

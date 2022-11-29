@@ -1,8 +1,12 @@
+import LinkButton from "../../components/buttons/LinkButton"
+import PageLayout from "../../components/layout/PageLayout"
+
 const Start = () => {
   return (
-    <div>
+    <PageLayout>
       <h1>Start Game</h1>
-    </div>
+      <LinkButton path="/game/playing" pathname="Finish Game" />
+    </PageLayout>
   )
 }
 
