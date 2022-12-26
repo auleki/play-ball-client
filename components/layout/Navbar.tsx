@@ -1,7 +1,9 @@
 const Navbar = () => {
   return (
-    <div>
-      <h1>Navbar</h1>
+    <div className="flex justify-between items-center px-6 py-4 bg-purple-800 border-b-2 border-purple-200 mb-12">
+      <span>Back</span>
+      <h2 className="text-xl">Title</h2>
+      <div className="w-12 h-12 rounded-full flex bg-purple-600 items-center justify-center">IMG</div>
     </div>
   )
 }
