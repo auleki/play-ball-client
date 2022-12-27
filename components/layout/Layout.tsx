@@ -4,11 +4,11 @@ import Navbar from './Navbar'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <Fragment>
+    <div className="bg-gray-500">
       <Navbar />
       {children}
       <Footer />
-    </Fragment>
+    </div>
   )
 }
 
