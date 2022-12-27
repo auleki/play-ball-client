@@ -2,7 +2,7 @@ import Button from "../../components/buttons/Button"
 import LinkButton from "../../components/buttons/LinkButton"
 import PageLayout from "../../components/layout/PageLayout"
 
-const SelectGame = () => {
+const Select = () => {
   return (
     <PageLayout>
       <h1>Select A Game</h1>
@@ -11,4 +11,4 @@ const SelectGame = () => {
   )
 }
 
-export default SelectGame
+export default Select

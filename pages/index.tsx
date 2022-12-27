@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import SelectGame from './game/select'
+import SelectGame from "../components/macros/SelectGame"
 
 const Home: NextPage = () => {
   return (
@@ -14,8 +14,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Home Page</h1>
-      <SelectGame />
+      <main className="h-screen text-white">
+        <SelectGame />
+      </main>
     </div>
   )
 }

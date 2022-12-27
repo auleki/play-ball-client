@@ -4,6 +4,7 @@ import { Fragment, useEffect, useState } from 'react'
 import Layout from '../components/layout/Layout'
 import { AnimatePresence } from "framer-motion"
 import { Router } from 'next/router'
+import GameContextProvider from '../contexts/GameContext'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = useState(false)
@@ -26,11 +27,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [])
   return (
     <Fragment>
-      <Layout>
-        <AnimatePresence exitBeforeEnter initial={false}>
-          <Component {...pageProps} />
-        </AnimatePresence>
-      </Layout>
+      <GameContextProvider>
+        <Layout>
+          <AnimatePresence exitBeforeEnter initial={false}>
+            <Component {...pageProps} />
+          </AnimatePresence>
+        </Layout>
+      </GameContextProvider>
     </Fragment>
   )
 }
