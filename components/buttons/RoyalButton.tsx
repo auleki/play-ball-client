@@ -16,7 +16,7 @@ const RoyalButton = ({
 }: RoyalButtonProps) => {
     return (
         <button
-            className="bg-purple-800 border border-gray-300 rounded-md flex items-center justify-between px-6 py-4 w-full"
+            className="text-white bg-purple-800 border border-gray-300 rounded-md flex items-center justify-between px-6 py-4 w-full"
             onClick={onClick}
         >
             <span>{text}</span>
