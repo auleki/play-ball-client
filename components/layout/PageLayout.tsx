@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 const PageLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <motion.div
-            style={{ height: "100vh" }}
+            style={{ height: "100vh", marginLeft: '1rem', marginRight: '1rem' }}
             initial={{ x: 300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 300, opacity: 0 }}
